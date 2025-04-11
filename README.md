@@ -49,7 +49,7 @@ This will automatically open the app in your default browser at `http://localhos
 ## 🌍 Live Deployment
 
 The application is deployed and available at:  
-👉 [https://candidate-management-demo.netlify.app](https://candidate-management-demo.netlify.app)
+👉 [https://andidate-management-application-front.netlify.app/](https://andidate-management-application-front.netlify.app/)
 
 ## 🔧 Available Scripts
 
@@ -106,6 +106,4 @@ By default, the frontend expects the backend to be running at `http://localhost:
    - Delete `node_modules` and `package-lock.json`
    - Run `npm install` again
 
-## 📜 License
 
-This project is licensed under the MIT License.
