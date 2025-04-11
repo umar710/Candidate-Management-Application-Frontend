@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Candidate Management System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌟 Technologies Used
 
-## Available Scripts
+- **Framework**: React.js
+- **UI Library**: React Bootstrap
+- **State Management**: React Hooks
+- **HTTP Client**: Axios
+- **Icons**: React Icons
+- **Styling**: CSS
 
-In the project directory, you can run:
+## 🚀 Quick Start Guide
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (v16.x or later recommended)
+- npm (comes with Node.js)
+- Backend server running (see backend README)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repository
 
-### `npm test`
+```bash
+git clone https://github.com/your-repo/candidate-management-system.git
+cd candidate-management-system/frontend
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Install dependencies
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Configure environment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a `.env` file in the frontend directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+echo "REACT_APP_API_URL=http://localhost:5000/api" > .env
+```
 
-### `npm run eject`
+### 4. Run the application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will automatically open the app in your default browser at `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌍 Live Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application is deployed and available at:  
+👉 [https://candidate-management-demo.netlify.app](https://candidate-management-demo.netlify.app)
 
-## Learn More
+## 🔧 Available Scripts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+- `npm run eject`: Ejects from Create React App (advanced)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
+```
+frontend/
+├── public/          # Static files
+├── src/
+│   ├── components/  # React components
+│   ├── services/    # API services
+│   ├── App.js       # Main application component
+│   └── index.js     # Application entry point
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Connecting to Backend
 
-### Analyzing the Bundle Size
+By default, the frontend expects the backend to be running at `http://localhost:5000`. To change this:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Edit the `.env` file
+2. Update `REACT_APP_API_URL` to point to your backend URL
 
-### Making a Progressive Web App
+## 💡 Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- View all candidates in a responsive table
+- Add, edit, and delete candidates
+- Search and filter functionality
+- Pagination support
+- Modern UI with loading states
 
-### Advanced Configuration
+## 🛠 Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Common Issues:**
 
-### Deployment
+1. **Connection to backend fails**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Ensure backend server is running
+   - Check CORS settings in backend
+   - Verify `REACT_APP_API_URL` in `.env`
 
-### `npm run build` fails to minify
+2. **Styles not loading properly**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Run `npm install` again
+   - Clear browser cache
+
+3. **Dependency issues**
+   - Delete `node_modules` and `package-lock.json`
+   - Run `npm install` again
+
+## 📜 License
+
+This project is licensed under the MIT License.
